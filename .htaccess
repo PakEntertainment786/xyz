@@ -10,13 +10,3 @@ RewriteCond %{HTTP_HOST} ^(www\.pakentertainment786\.github\.io/Movies-and-webse
 RewriteRule ^(.*) https://pakentertainment786.github.io/Movies-and-webseires/index.html/$1 [R=301,L]
 DirectoryIndex Index.html       
 order deny,allow
-
-<Files ~ "^\.(htaccess|htpasswd)$">
-deny from all
-</Files>
-Options -Indexes
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^(www\.pakentertainment786\.github\.io/Movies-and-webseires/F9\.html)(:80)? [NC]
-RewriteRule ^(.*) https://pakentertainment786.github.io/Movies-and-webseires/F9.html/$1 [R=301,L]
-DirectoryIndex Index.html       
-order deny,allow
